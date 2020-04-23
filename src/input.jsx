@@ -3,20 +3,21 @@ import React from 'react';
 class Input extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      letters: ''
-    };
+    // this.state = {
+    //   letters: ''
+    // };
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(e) {
-    const { value, name } = e.target;
-    this.setState({ [name]: value });
+    const { value } = e.target;
+    // this.setState({ [name]: value });
+    this.props.grab(value);
   }
 
   render() {
     return (
-      <input type="text" name="letters" value={this.state.letters} onChange={this.handleChange} placeholder="Type something here"></input>
+      <input type="text" name="letters" onChange={this.handleChange} placeholder="Type something here"></input>
     );
   }
 }
