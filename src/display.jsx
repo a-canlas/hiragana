@@ -100,7 +100,42 @@ class Display extends React.Component {
         }
         abc.splice(0, 1);
       } else if (abc[0] === 'i') {
-        converted += '\u3044';
+        if (converted[converted.length - 1] === 'h') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3072';
+        } else if (converted[converted.length - 1] === 'b') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3073';
+        } else if (converted[converted.length - 1] === 'p') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3074';
+        } else if (converted[converted.length - 1] === 'n') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u306B';
+        } else if (converted[converted.length - 1] === 'r') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u308A';
+        } else if (converted[converted.length - 1] === 'm') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u307F';
+        } else if (converted[converted.length - 1] === 'k') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u304D';
+        } else if (converted[converted.length - 1] === 'g') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u304E';
+        } else if (converted[converted.length - 1] === 's') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3057';
+        } else if (converted[converted.length - 1] === 'z') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3058';
+        } else if (converted[converted.length - 1] === 't') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3061';
+        } else {
+          converted += '\u3044';
+        }
         abc.splice(0, 1);
       } else if (abc[0] === 'o') {
         converted += '\u304A';
