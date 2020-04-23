@@ -15,6 +15,12 @@ class Display extends React.Component {
         converted += '\u3042';
       } else if (abc[i] === 'e') {
         converted += '\u3048';
+      } else if (abc[i] === 'i') {
+        converted += '\u3044';
+      } else if (abc[i] === 'o') {
+        converted += '\u304A';
+      } else if (abc[i] === 'u') {
+        converted += '\u3046';
       }
     }
     return converted;
