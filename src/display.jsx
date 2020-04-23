@@ -39,6 +39,9 @@ class Display extends React.Component {
         } else if (converted[converted.length - 1] === 's') {
           converted = converted.slice(0, converted.length - 1);
           converted += '\u3055';
+        } else if (converted[converted.length - 1] === 'z') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3056';
         } else if (converted[converted.length - 1] === 't') {
           converted = converted.slice(0, converted.length - 1);
           converted += '\u305F';
@@ -56,7 +59,45 @@ class Display extends React.Component {
         }
         abc.splice(0, 1);
       } else if (abc[0] === 'e') {
-        converted += '\u3048';
+        if (converted[converted.length - 1] === 'h') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3078';
+        } else if (converted[converted.length - 1] === 'b') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3079';
+        } else if (converted[converted.length - 1] === 'p') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u307A';
+        } else if (converted[converted.length - 1] === 'n') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u306D';
+        } else if (converted[converted.length - 1] === 'r') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u308C';
+        } else if (converted[converted.length - 1] === 'm') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3081';
+        } else if (converted[converted.length - 1] === 'k') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3051';
+        } else if (converted[converted.length - 1] === 'g') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3052';
+        } else if (converted[converted.length - 1] === 's') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u305B';
+        } else if (converted[converted.length - 1] === 'z') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u305C';
+        } else if (converted[converted.length - 1] === 't') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3066';
+        } else if (converted[converted.length - 1] === 'd') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3067';
+        } else {
+          converted += '\u3048';
+        }
         abc.splice(0, 1);
       } else if (abc[0] === 'i') {
         converted += '\u3044';
