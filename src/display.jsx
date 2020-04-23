@@ -10,17 +10,25 @@ class Display extends React.Component {
     let abc = this.props.displayVal;
     abc = abc.toLowerCase().split('');
     let converted = '';
-    for (let i = 0; i < abc.length; i++) {
-      if (abc[i] === 'a') {
+    while (abc.length > 0) {
+      if (abc[0] === 'a') {
         converted += '\u3042';
-      } else if (abc[i] === 'e') {
+        abc.splice(0, 1);
+      } else if (abc[0] === 'e') {
         converted += '\u3048';
-      } else if (abc[i] === 'i') {
+        abc.splice(0, 1);
+      } else if (abc[0] === 'i') {
         converted += '\u3044';
-      } else if (abc[i] === 'o') {
+        abc.splice(0, 1);
+      } else if (abc[0] === 'o') {
         converted += '\u304A';
-      } else if (abc[i] === 'u') {
+        abc.splice(0, 1);
+      } else if (abc[0] === 'u') {
         converted += '\u3046';
+        abc.splice(0, 1);
+      } else {
+        converted += abc[0];
+        abc.splice(0, 1);
       }
     }
     return converted;
