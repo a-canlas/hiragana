@@ -12,7 +12,48 @@ class Display extends React.Component {
     let converted = '';
     while (abc.length > 0) {
       if (abc[0] === 'a') {
-        converted += '\u3042';
+        if (converted[converted.length - 1] === 'h') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u306F';
+        } else if (converted[converted.length - 1] === 'b') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3070';
+        } else if (converted[converted.length - 1] === 'p') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3071';
+        } else if (converted[converted.length - 1] === 'n') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u306A';
+        } else if (converted[converted.length - 1] === 'r') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3089';
+        } else if (converted[converted.length - 1] === 'm') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u307E';
+        } else if (converted[converted.length - 1] === 'k') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u304B';
+        } else if (converted[converted.length - 1] === 'g') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u304C';
+        } else if (converted[converted.length - 1] === 's') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3055';
+        } else if (converted[converted.length - 1] === 't') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u305F';
+        } else if (converted[converted.length - 1] === 'd') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3060';
+        } else if (converted[converted.length - 1] === 'w') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u308F';
+        } else if (converted[converted.length - 1] === 'y') {
+          converted = converted.slice(0, converted.length - 1);
+          converted += '\u3084';
+        } else {
+          converted += '\u3042';
+        }
         abc.splice(0, 1);
       } else if (abc[0] === 'e') {
         converted += '\u3048';
