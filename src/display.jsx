@@ -134,7 +134,7 @@ class Display extends React.Component {
         } else if (converted[len - 1] === 's') {
           converted = converted.slice(0, len - 1);
           converted += '\u3057';
-        } else if (converted[len - 1] === 'z') {
+        } else if (converted[len - 1] === 'z' || converted[len - 1] === 'j') {
           converted = converted.slice(0, len - 1);
           converted += '\u3058';
         } else if (converted[len - 1] === 't') {
