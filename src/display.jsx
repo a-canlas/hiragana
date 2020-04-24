@@ -238,6 +238,9 @@ class Display extends React.Component {
           converted += '\u3046';
         }
         abc.splice(0, 1);
+      } else if (abc[0] === 'n') {
+        converted += '\u3093';
+        abc.splice(0, 1);
       } else {
         converted += abc[0];
         abc.splice(0, 1);
