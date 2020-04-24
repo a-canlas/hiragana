@@ -204,7 +204,7 @@ class Display extends React.Component {
         } else if (converted[len - 1] === 'p') {
           converted = converted.slice(0, len - 1);
           converted += '\u3077';
-        } else if (converted[len - 1] === 'n') {
+        } else if (converted[len - 1] === '\u3093') {
           converted = converted.slice(0, len - 1);
           converted += '\u306C';
         } else if (converted[len - 1] === 'r') {
