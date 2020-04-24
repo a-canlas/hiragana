@@ -192,7 +192,10 @@ class Display extends React.Component {
         }
         abc.splice(0, 1);
       } else if (abc[0] === 'u') {
-        if (converted[len - 1] === 'h') {
+        if (converted[len - 2] === 't' && converted[len - 1] === 's') {
+          converted = converted.slice(0, len - 2);
+          converted += '\u3064';
+        } else if (converted[len - 1] === 'h' || converted[len - 1] === 'f') {
           converted = converted.slice(0, len - 1);
           converted += '\u3075';
         } else if (converted[len - 1] === 'b') {
