@@ -76,6 +76,15 @@ class Display extends React.Component {
           } else if (converted[len - 2] === 'm') {
             converted = converted.slice(0, len - 2);
             converted += '\u307F\u3083';
+          } else if (converted[len - 2] === 'r') {
+            converted = converted.slice(0, len - 2);
+            converted += '\u308A\u3083';
+          } else if (converted[len - 2] === 'b') {
+            converted = converted.slice(0, len - 2);
+            converted += '\u3073\u3083';
+          } else if (converted[len - 2] === 'p') {
+            converted = converted.slice(0, len - 2);
+            converted += '\u3074\u3083';
           } else {
             converted = converted.slice(0, len - 1);
             converted += '\u3084';
