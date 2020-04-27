@@ -1,7 +1,21 @@
 body {
+  box-sizing: border-box;
+  margin: 0;
   height: 100vh;
   background-color:  rgb(228, 219, 178);
+}
 
+.input-div {
+  position: relative;
+}
+
+.input-div input {
+  height: 20px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .heading-bar {
@@ -12,16 +26,25 @@ h2 {
   text-align: center;
 }
 .heading-bar h1 {
+  margin: 0;
   text-align: center;
-  /* color: rgb(83, 228, 69); */
-  /* color: red; */
   font-family: 'Shojumaru', cursive;
-  /* text-shadow: -2px 2px black,
-    2px 2px black,
-    2px -2px black,
-    -2px -2px black; */
-    text-shadow: -2px 2px red,
-    2px 2px red,
-    2px -2px red,
-    -2px -2px red;
+  text-shadow: -2px 2px red,
+  2px 2px red,
+  2px -2px red,
+  -2px -2px red;
+}
+
+@media screen and (min-height: 1000px){
+  .heading-bar h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  .input-div input {
+    font-size: 40px;
+    height: 60px;
+    width: 400px;
+  }
 }

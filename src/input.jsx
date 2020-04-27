@@ -17,7 +17,9 @@ class Input extends React.Component {
 
   render() {
     return (
-      <input type="text" name="letters" onChange={this.handleChange} placeholder="Type something here"></input>
+      <div className="input-div">
+        <input type="text" name="letters" onChange={this.handleChange} placeholder="Type something here"></input>
+      </div>
     );
   }
 }
