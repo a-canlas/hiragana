@@ -14,8 +14,13 @@ class Display extends React.Component {
       const len = converted.length;
       if (abc[0] === 'a') {
         if (converted[len - 1] === 'h') {
-          converted = converted.slice(0, len - 1);
-          converted += '\u306F';
+          if (converted[len - 2] === 's') {
+            converted = converted.slice(0, len - 2);
+            converted += '\u3057\u3083';
+          } else {
+            converted = converted.slice(0, len - 1);
+            converted += '\u306F';
+          }
         } else if (converted[len - 1] === 'b') {
           converted = converted.slice(0, len - 1);
           converted += '\u3070';
