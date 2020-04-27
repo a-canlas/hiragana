@@ -367,7 +367,7 @@ class Display extends React.Component {
 
   render() {
     return (
-      this.props.displayVal.length === 0 ? <h2>Type something in...</h2> : <h2>{this.convert()}</h2>
+      this.props.displayVal.length === 0 ? <h2>Type something in romaji...</h2> : <h2>{this.convert()}</h2>
     );
   }
 }
