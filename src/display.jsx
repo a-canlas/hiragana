@@ -17,6 +17,9 @@ class Display extends React.Component {
           if (converted[len - 2] === 's') {
             converted = converted.slice(0, len - 2);
             converted += '\u3057\u3083';
+          } else if (converted[len - 2] === 'c') {
+            converted = converted.slice(0, len - 2);
+            converted += '\u3061\u3083';
           } else {
             converted = converted.slice(0, len - 1);
             converted += '\u306F';
