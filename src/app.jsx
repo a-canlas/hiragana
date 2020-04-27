@@ -1,6 +1,7 @@
 import React from 'react';
 import Input from './input';
 import Display from './display';
+import Heading from './heading';
 
 class App extends React.Component {
   constructor(props) {
@@ -17,7 +18,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
+        <Heading />
         <Display displayVal={this.state.characters}/>
         <Input grab={this.convertCharacters}/>
       </div>

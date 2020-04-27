@@ -1,0 +1,27 @@
+body {
+  height: 100vh;
+  background-color:  rgb(228, 219, 178);
+
+}
+
+.heading-bar {
+  background-color: rgb(155, 142, 87);
+}
+
+h2 {
+  text-align: center;
+}
+.heading-bar h1 {
+  text-align: center;
+  /* color: rgb(83, 228, 69); */
+  /* color: red; */
+  font-family: 'Shojumaru', cursive;
+  /* text-shadow: -2px 2px black,
+    2px 2px black,
+    2px -2px black,
+    -2px -2px black; */
+    text-shadow: -2px 2px red,
+    2px 2px red,
+    2px -2px red,
+    -2px -2px red;
+}
